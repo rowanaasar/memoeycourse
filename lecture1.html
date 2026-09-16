@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الأولى: مدخل إلى عالم الذاكرة وتنشيط الدماغ 🧠💡 | كورس الذاكرة الخارقة</title>
+  
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            }
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'float': 'float 4s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-cairo antialiased selection:bg-purple-200 selection:text-purple-900 pb-24">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/85 border-b border-purple-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      
+      <!-- Back to Home & Title -->
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2.5 rounded-xl bg-purple-50 text-purple-700 hover:bg-purple-100 transition flex items-center gap-1.5 text-sm font-black" title="الرجوع للرئيسية">
+          <span>→</span>
+          <span class="hidden sm:inline">الرئيسية</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200 hidden sm:block"></div>
+        <div>
+          <span class="text-xs font-bold text-purple-600 uppercase tracking-wide">المحاضرة 01 من 14</span>
+          <h1 class="text-base sm:text-lg font-black text-slate-900 line-clamp-1">مدخل إلى عالم الذاكرة وتنشيط الدماغ 🧠💡</h1>
+        </div>
+      </div>
+
+      <!-- Quick Completion Badge -->
+      <div class="flex items-center gap-3">
+        <div class="hidden md:flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-xl">
+          <span>معدل القراءة:</span>
+          <span class="text-purple-700">~ 7 دقائق تفاعلية</span>
+        </div>
+        <button onclick="window.scrollTo({top: document.getElementById('quiz-section').offsetTop - 80, behavior: 'smooth'})" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-black bg-purple-600 hover:bg-purple-700 text-white shadow-md shadow-purple-500/20 active:scale-95 transition">
+          🎯 اختبر فهمك
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 space-y-12">
+
+    <!-- Top Hero Card for Lecture 1 -->
+    <div class="bg-gradient-to-r from-purple-700 via-indigo-700 to-purple-900 rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-60 h-60 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="relative z-10 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-black">
+          <span>🌟 البداية الذكية والانطلاقة</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black leading-tight">
+          المحاضرة الأولى: مدخل إلى عالم الذاكرة وتنشيط الدماغ 🧠💡
+        </h2>
+        <p class="text-purple-100 text-base sm:text-lg max-w-2xl font-medium leading-relaxed">
+          خطوتك الأولى لفهم الجهاز الأكثر تعقيداً وإبهاراً في الكون: دماغك! استعد لاكتشاف كيف تُبنى ذكرياتك، ولماذا ننسى، وكيف تُطلق طاقتك الكامنة.
+        </p>
+      </div>
+    </div>
+
+    <!-- بطاقة التعلم: ما ستتعلمه في هذه المحاضرة (Learning Card) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-purple-100 shadow-sm">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl font-bold">
+          📋
+        </div>
+        <div>
+          <h3 class="text-xl font-black text-slate-900">بطاقة التعلم السريع (محاور المحاضرة)</h3>
+          <p class="text-xs text-slate-500 font-semibold">أهم النقاط الجوهرية التي ستخرج بها بعد إتمام هذه المحاضرة</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-100 flex items-start gap-3">
+          <span class="text-2xl">1️⃣</span>
+          <div>
+            <h4 class="font-black text-slate-800 text-sm mb-1">الذاكرة والنسيان</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">ما هو مفهوم الذاكرة حقيقةً ولماذا يتلاشى التذكر؟</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 flex items-start gap-3">
+          <span class="text-2xl">2️⃣</span>
+          <div>
+            <h4 class="font-black text-slate-800 text-sm mb-1">الأنواع والحواس الـ 5</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">الحسية، القصيرة، والطويلة ودور الحواس في تثبيتها.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-pink-50/70 border border-pink-100 flex items-start gap-3">
+          <span class="text-2xl">3️⃣</span>
+          <div>
+            <h4 class="font-black text-slate-800 text-sm mb-1">قدرة الدماغ والأعمار</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">10 مليون خلية عصبية ونسب الاستخدام الحقيقية.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 flex items-start gap-3">
+          <span class="text-2xl">4️⃣</span>
+          <div>
+            <h4 class="font-black text-slate-800 text-sm mb-1">الغذاء، التنفس، والرسم</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">الوقود الحيوي للدماغ وتنشيط الفص الأيمن إبداعياً.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 1️⃣ المحور الأول: مفهوم الذاكرة (What is Memory?) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-9 h-9 rounded-xl bg-purple-600 text-white flex items-center justify-center font-black text-lg">1</span>
+        <h3 class="text-2xl font-black text-slate-900">مفهوم الذاكرة (What is Memory?)</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        
+        <!-- Text Definition -->
+        <div class="md:col-span-7 space-y-4">
+          <div class="p-5 rounded-2xl bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200">
+            <span class="text-xs font-black text-purple-700 uppercase">التعريف الذهبي:</span>
+            <p class="text-lg sm:text-xl font-black text-purple-950 mt-1 leading-relaxed">
+              "الذاكرة هي قدرة الدماغ الخارقة على <span class="text-purple-600 underline decoration-wavy">تخزين</span> المعلومات، ثم <span class="text-indigo-600 underline decoration-wavy">استرجاعها بسهولة</span> في الوقت الذي نحتاجها فيه."
+            </p>
+          </div>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            الذاكرة ليست مجرد شريط تسجيل سلبي، بل هي ورشة حية ونشطة! عندما ترى مشهداً أو تقرأ آية كريمة أو تذاكر درساً، يقوم الدماغ بترميزها كنبضات كهروكيميائية، وإذا قمت بترتيبها وتصنيفها في خزائن منظمة، أصبح استرجاعها فورياً وبلا مجهود.
+          </p>
+
+          <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm font-bold flex items-center gap-2">
+            <span class="text-xl">💡</span>
+            <span>السر الأكبر: النسيان ليس عطلاً في الدماغ، بل هو عدم تخزين المعلومة في مكانها الصحيح في المقام الأول!</span>
+          </div>
+        </div>
+
+        <!-- Cheerful Illustrated Graphic -->
+        <div class="md:col-span-5 flex flex-col items-center justify-center">
+          <div class="w-full max-w-xs bg-gradient-to-b from-purple-100 via-indigo-50 to-pink-100 rounded-3xl p-6 border-2 border-purple-200 text-center shadow-inner relative overflow-hidden">
+            
+            <!-- Cartoon Brain with Treasure Box SVG Graphic -->
+            <div class="relative py-4 flex flex-col items-center justify-center">
+              
+              <!-- Brain with playful face -->
+              <div class="text-7xl animate-bounce-slow drop-shadow-md select-none">
+                🧠
+              </div>
+              
+              <!-- Organized gift/cabinet below -->
+              <div class="mt-3 text-5xl animate-float select-none">
+                🗄️✨
+              </div>
+
+              <div class="mt-4 bg-white/95 px-4 py-2 rounded-2xl shadow-sm border border-purple-200">
+                <p class="text-xs font-black text-purple-900">خزانة الذكريات الذكية</p>
+                <p class="text-[11px] text-slate-500 font-medium">تخزين مرتب = استرجاع فوري ⚡</p>
+              </div>
+
+            </div>
+
+            <!-- Suggestion caption badge as requested in prompt -->
+            <div class="mt-4 pt-3 border-t border-purple-200/60 text-[11px] text-purple-800 font-bold bg-white/60 rounded-xl p-2">
+              📸 <em>رسم توضيحي كرتوني مبهج لدماغ يحمل خزانة وصندوق هدايا فائق التنظيم</em>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2️⃣ المحور الثاني: أنواع الذاكرة الثلاثة والحواس الخمس (Types of Memory) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-8">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-lg">2</span>
+        <div>
+          <h3 class="text-2xl font-black text-slate-900">أنواع الذاكرة الثلاثة (Types of Memory)</h3>
+          <p class="text-xs text-slate-500 font-semibold">رحلة المعلومة عبر 3 محطات رئيسية في عقلك</p>
+        </div>
+      </div>
+
+      <!-- 3 Memory Types Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Type 1: الحسية -->
+        <div class="rounded-2xl p-6 bg-gradient-to-b from-blue-50 to-white border-2 border-blue-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-blue-200 text-blue-900 rounded-lg text-xs font-black">المحطة 1</span>
+              <span class="text-2xl">👁️👂</span>
+            </div>
+            <h4 class="text-lg font-black text-slate-900 mb-2">الذاكرة الحسية (Sensory)</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              التخزين اللحظي الخاطف (يدوم لأجزاء من الثانية حتى بضع ثوانٍ). البوابة الأولى التي تلتقط العالم عبر <strong>الحواس الخمس</strong>.
+            </p>
+          </div>
+
+          <div class="p-3 bg-blue-100/50 rounded-xl text-xs text-blue-900 font-bold border border-blue-200">
+            إذا لم تعرها اهتمامك الفوري، تتبخر وتختفي تماماً!
+          </div>
+        </div>
+
+        <!-- Type 2: قصيرة المدى -->
+        <div class="rounded-2xl p-6 bg-gradient-to-b from-amber-50 to-white border-2 border-amber-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-amber-200 text-amber-900 rounded-lg text-xs font-black">المحطة 2</span>
+              <span class="text-2xl">⏳📱</span>
+            </div>
+            <h4 class="text-lg font-black text-slate-900 mb-2">الذاكرة قصيرة المدى (Short-Term)</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              طاولة العمل المؤقتة في الدماغ. تحتفظ بالمعلومة لبضع دقائق فقط (مثل حفظ رقم هاتف مؤقتاً لطلبه أو رمز تحقق OTP).
+            </p>
+          </div>
+
+          <div class="p-3 bg-amber-100/50 rounded-xl text-xs text-amber-900 font-bold border border-amber-200">
+            تتسع عادة لـ 5 إلى 9 عناصر فقط في المرة الواحدة.
+          </div>
+        </div>
+
+        <!-- Type 3: طويلة المدى -->
+        <div class="rounded-2xl p-6 bg-gradient-to-b from-purple-50 to-white border-2 border-purple-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-purple-200 text-purple-900 rounded-lg text-xs font-black">المحطة 3</span>
+              <span class="text-2xl">🏛️💎</span>
+            </div>
+            <h4 class="text-lg font-black text-slate-900 mb-2">الذاكرة طويلة المدى (Long-Term)</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              المخزن الدائم والعملاق لفترات طويلة أو مدى الحياة (مثل أسماء أفراد العائلة، أو السور القرآنية المحفوظة بدقة، أو مهارة ركوب الدراجة).
+            </p>
+          </div>
+
+          <div class="p-3 bg-purple-100/50 rounded-xl text-xs text-purple-900 font-bold border border-purple-200">
+            سعة تخزين غير محدودة عند ربطها بالتكرار والمشاعر!
+          </div>
+        </div>
+
+      </div>
+
+      <!-- الحواس الخمس التفاعلية (Interactive 5 Senses) -->
+      <div class="mt-8 pt-6 border-t border-slate-200">
+        <div class="text-center max-w-xl mx-auto mb-6">
+          <h4 class="text-lg font-black text-slate-900">
+            الحواس الخمس: بوابات الذاكرة الحسية 🎧👁️👃✋👅
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">
+            اضغط على أي حاسة لاكتشاف كيف تُثبت المعلومة في دماغك وتزيد سرعة الحفظ:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+          
+          <!-- Sense 1: السمع -->
+          <button onclick="selectSense('hearing')" id="sense-hearing" class="sense-btn p-4 rounded-2xl bg-slate-50 border-2 border-slate-200 hover:border-purple-400 text-center transition flex flex-col items-center gap-2">
+            <span class="text-3xl">🎧</span>
+            <span class="font-black text-sm text-slate-800">السمع</span>
+            <span class="text-[11px] text-slate-500 font-medium">نغمة وترتيل الآية</span>
+          </button>
+
+          <!-- Sense 2: البصر -->
+          <button onclick="selectSense('sight')" id="sense-sight" class="sense-btn p-4 rounded-2xl bg-purple-50 border-2 border-purple-500 text-center transition flex flex-col items-center gap-2 shadow-sm">
+            <span class="text-3xl">👁️</span>
+            <span class="font-black text-sm text-purple-900">البصر</span>
+            <span class="text-[11px] text-purple-700 font-medium">موقع الآية والصفحة</span>
+          </button>
+
+          <!-- Sense 3: الشم -->
+          <button onclick="selectSense('smell')" id="sense-smell" class="sense-btn p-4 rounded-2xl bg-slate-50 border-2 border-slate-200 hover:border-purple-400 text-center transition flex flex-col items-center gap-2">
+            <span class="text-3xl">👃</span>
+            <span class="font-black text-sm text-slate-800">الشم</span>
+            <span class="text-[11px] text-slate-500 font-medium">رائحة الورق والقهوة</span>
+          </button>
+
+          <!-- Sense 4: اللمس -->
+          <button onclick="selectSense('touch')" id="sense-touch" class="sense-btn p-4 rounded-2xl bg-slate-50 border-2 border-slate-200 hover:border-purple-400 text-center transition flex flex-col items-center gap-2">
+            <span class="text-3xl">✋</span>
+            <span class="font-black text-sm text-slate-800">اللمس</span>
+            <span class="text-[11px] text-slate-500 font-medium">الكتابة بالقلم والورق</span>
+          </button>
+
+          <!-- Sense 5: التذوق -->
+          <button onclick="selectSense('taste')" id="sense-taste" class="sense-btn p-4 rounded-2xl bg-slate-50 border-2 border-slate-200 hover:border-purple-400 text-center transition flex flex-col items-center gap-2">
+            <span class="text-3xl">👅</span>
+            <span class="font-black text-sm text-slate-800">التذوق</span>
+            <span class="text-[11px] text-slate-500 font-medium">طعم النعناع والماء</span>
+          </button>
+
+        </div>
+
+        <!-- Dynamic Explanation Box for the selected sense -->
+        <div id="sense-display" class="mt-4 p-5 rounded-2xl bg-purple-50/80 border border-purple-200 text-sm font-semibold text-purple-950 flex items-center gap-4">
+          <span class="text-4xl">👁️</span>
+          <div>
+            <h5 class="font-black text-purple-900 text-base">حاسة البصر (الذاكرة الصورية):</h5>
+            <p class="text-slate-700 text-xs sm:text-sm mt-0.5">
+              يمثل الإدراك البصري أكثر من 70% من مدخلات الدماغ! عندما تربط حفظ آية بمكانها في المصحف (أعلى الصفحة أو أسفلها)، فإنك تستدعي صورة الصفحة مباشرة في ذهنك.
+            </p>
+          </div>
+        </div>
+
+        <!-- Suggested Visual Badge -->
+        <div class="mt-4 text-center">
+          <span class="inline-block text-[11px] text-slate-500 font-bold bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200">
+            📸 <em>اقتراح صورة: انفوجرافيك مبسط يربط الحواس الخمس بمسارات المعالجة في الدماغ</em>
+          </span>
+        </div>
+      </div>
+
+      <!-- Mini Test: اختبار الذاكرة قصيرة المدى التفاعلي -->
+      <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <span class="px-2.5 py-1 bg-amber-200 text-amber-900 rounded-md text-xs font-black">تحدي سريع وممتع ⚡</span>
+            <h4 class="text-base font-black text-slate-900 mt-1">اختبر ذاكرتك قصيرة المدى الآن في 3 ثوانٍ!</h4>
+            <p class="text-xs text-slate-600">سيظهر رقم مكون من 6 خانات لمدة 3 ثوانٍ ثم يختفي.. هل تستطيع كتابته؟</p>
+          </div>
+          <button onclick="startQuickNumberTest()" id="start-test-btn" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-black text-sm shadow-md transition whitespace-nowrap">
+            ابدأ التحدي ⏱️
+          </button>
+        </div>
+
+        <!-- Interactive Test Container -->
+        <div id="test-container" class="mt-4 hidden p-4 bg-white rounded-xl border border-amber-200 text-center">
+          <div id="number-display" class="text-4xl font-mono font-black text-amber-600 py-3 tracking-widest animate-pulse">
+            <!-- Number shown here -->
+          </div>
+          <div id="input-container" class="hidden flex flex-col sm:flex-row items-center justify-center gap-3">
+            <input type="text" id="user-number-input" placeholder="اكتب الرقم هنا..." class="px-4 py-2 border-2 border-amber-300 rounded-xl font-mono text-center font-bold text-lg focus:outline-none focus:border-amber-500 w-48">
+            <button onclick="verifyNumberTest()" class="px-4 py-2 bg-emerald-600 text-white rounded-xl font-black text-sm">
+              تحقق ✅
+            </button>
+          </div>
+          <div id="test-result" class="mt-2 text-sm font-bold"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3️⃣ المحور الثالث: قدرة الدماغ والقدرات الاستيعابية (Brain Capacity & Aging) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-8">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-9 h-9 rounded-xl bg-pink-600 text-white flex items-center justify-center font-black text-lg">3</span>
+        <div>
+          <h3 class="text-2xl font-black text-slate-900">قدرة الدماغ والنسب العمرية (Brain Capacity & Aging)</h3>
+          <p class="text-xs text-slate-500 font-semibold">حقائق مذهلة عن قدرات عقلك الاستيعابية وتأثير التقدم في العمر</p>
+        </div>
+      </div>
+
+      <!-- 10 Million Neurons Banner -->
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-purple-900 via-indigo-900 to-pink-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
+        <div class="space-y-2 text-center sm:text-right">
+          <div class="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-black">
+            معجزة الخلق الإلهي 🌌
+          </div>
+          <h4 class="text-xl sm:text-2xl font-black">
+            خلق الله الإنسان بعقل يحتوي على حوالي <span class="text-pink-400 underline">10 مليون خلية عصبية</span>
+          </h4>
+          <p class="text-purple-200 text-xs sm:text-sm max-w-xl">
+            هذا الدماغ يمتلك قدرة تخزين تكفي لاستيعاب ملايين المجلدات ومئات السنين من التسجيلات المرئية عالية الدقة بلا توقف!
+          </p>
+        </div>
+        <div class="text-6xl animate-pulse">
+          ⚡🧠
+        </div>
+      </div>
+
+      <!-- نسبة الاستخدام الفعلي للدماغ حسب السن مع مخطط بياني ملون -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h4 class="font-black text-lg text-slate-900">
+            📊 نسبة الاستخدام الفعلي للدماغ حسب السن:
+          </h4>
+          <span class="text-xs text-slate-500 font-bold">مخطط تفاعلي ملون</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- Age 1: Less than 20 -->
+          <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-2">
+            <div class="flex items-center justify-between text-sm font-black">
+              <span class="text-emerald-900">🔹 أقل من 20 سنة</span>
+              <span class="text-emerald-700 bg-emerald-200/80 px-2.5 py-0.5 rounded-full text-xs">7% إلى 10%</span>
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-emerald-200/60 rounded-full h-3.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-emerald-500 to-teal-500 h-full rounded-full w-[10%] animate-pulse"></div>
+            </div>
+            <p class="text-[11px] text-emerald-800 font-medium">أعلى نشاط عصبي وتدفق للأفكار وفترة ذهبية للحفظ وتثبيت القرآن.</p>
+          </div>
+
+          <!-- Age 2: 20 - 40 -->
+          <div class="p-4 rounded-2xl bg-blue-50 border border-blue-200 space-y-2">
+            <div class="flex items-center justify-between text-sm font-black">
+              <span class="text-blue-900">🔹 من 20 إلى 40 سنة</span>
+              <span class="text-blue-700 bg-blue-200/80 px-2.5 py-0.5 rounded-full text-xs">5% إلى 7%</span>
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-blue-200/60 rounded-full h-3.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-full rounded-full w-[7%]"></div>
+            </div>
+            <p class="text-[11px] text-blue-800 font-medium">فترة النضج والربط المنطقي؛ انخفاض طفيف بسبب انشغالات الحياة.</p>
+          </div>
+
+          <!-- Age 3: 40 - 60 -->
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-2">
+            <div class="flex items-center justify-between text-sm font-black">
+              <span class="text-amber-900">🔹 من 40 إلى 60 سنة</span>
+              <span class="text-amber-700 bg-amber-200/80 px-2.5 py-0.5 rounded-full text-xs">3% إلى 5%</span>
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-amber-200/60 rounded-full h-3.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-amber-500 to-yellow-500 h-full rounded-full w-[5%]"></div>
+            </div>
+            <p class="text-[11px] text-amber-800 font-medium">الاعتماد على الروتين؛ بحاجة لتمارين ذهنية لتحفيز التشابكات العصبية.</p>
+          </div>
+
+          <!-- Age 4: Over 60 -->
+          <div class="p-4 rounded-2xl bg-pink-50 border border-pink-200 space-y-2">
+            <div class="flex items-center justify-between text-sm font-black">
+              <span class="text-pink-900">🔹 فوق 60 سنة</span>
+              <span class="text-pink-700 bg-pink-200/80 px-2.5 py-0.5 rounded-full text-xs">1% إلى 3% فقط</span>
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-pink-200/60 rounded-full h-3.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-pink-500 to-rose-500 h-full rounded-full w-[3%]"></div>
+            </div>
+            <p class="text-[11px] text-pink-800 font-medium">خمول نسبي في التوصيلات لقلة التحديات الجديدة، ويمكن إحياؤه بالتدريب!</p>
+          </div>
+
+        </div>
+
+        <!-- الملاحظة التوضيحية الذهبية -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 border-2 border-indigo-200 flex items-start gap-4">
+          <span class="text-3xl">🌟</span>
+          <div class="space-y-1">
+            <h5 class="font-black text-indigo-950 text-base">ملاحظة توضيحية هامة ومشجعة جداً:</h5>
+            <p class="text-slate-700 text-sm leading-relaxed">
+              هذا التراجع هو <strong>انخفاض طبيعي في نسبة الاستخدام اليومي</strong> وليس في <strong>القدرة العقلية الأصلية</strong>! الدماغ مثل العضلة تماماً: إذا تركته دون تمرين أصابه الخمول، وإذا دربته وحفظت به القرآن ومارست التمارين، يعود أقوى وأنشط من عقول الشباب!
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <span class="inline-block text-[11px] text-slate-500 font-bold bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200">
+            📸 <em>اقتراح صورة: مخطط بياني ملون ولطيف يوضح النسب العمرية بصورة مشجعة وتفاؤلية</em>
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 4️⃣ المحور الرابع: محاور إضافية مميزة (غذاء الدماغ، التنفس، الرسم والتلوين) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-10">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-lg">4</span>
+        <div>
+          <h3 class="text-2xl font-black text-slate-900">محاور إضافية مميزة للمحاضرة</h3>
+          <p class="text-xs text-slate-500 font-semibold">ثلاثة أسرار عملية لتنشيط الفص الأيمن وتغذية الخلايا العصبية</p>
+        </div>
+      </div>
+
+      <!-- Feature 1: غذاء الدماغ 🥗 -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-xl font-black text-slate-900">
+          <span>🥗</span>
+          <h4>غذاء الدماغ (Brain Food)</h4>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          يتغذى الدماغ على الأكسجين والجلوكوز الطبيعي والدهون الصحية. إليك أهم الأطعمة التي ترفع كفاءة النواقل العصبية:
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-center">
+            <span class="text-3xl block mb-2">💧</span>
+            <div class="font-black text-slate-900 text-sm">الماء النقي</div>
+            <div class="text-[11px] text-slate-500 mt-1">الدماغ يتكون من 75% ماء؛ الجفاف يسبب النسيان الفوري!</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-100 text-center">
+            <span class="text-3xl block mb-2">🥜</span>
+            <div class="font-black text-slate-900 text-sm">الجوز والمكسرات</div>
+            <div class="text-[11px] text-slate-500 mt-1">غني بالأوميجا 3 وفيتامين E لحماية أغشية الخلايا العصبية.</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 text-center">
+            <span class="text-3xl block mb-2">🫐</span>
+            <div class="font-black text-slate-900 text-sm">التوت والفاكهة</div>
+            <div class="text-[11px] text-slate-500 mt-1">مضادات أكسدة قوية تحارب شيخوخة الدماغ وتعزز التذكر.</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-100 text-center">
+            <span class="text-3xl block mb-2">🍫</span>
+            <div class="font-black text-slate-900 text-sm">الشوكولاتة الداكنة</div>
+            <div class="text-[11px] text-slate-500 mt-1">تحتوي الفلافونويد الذي يضخ تدفق الدم إلى خلايا الذاكرة.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: تمرين التنفس العميق التفاعلي 🌬️ -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 text-white space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-xs font-black mb-2">
+              <span>🌬️ أداة تفاعلية حية</span>
+            </div>
+            <h4 class="text-xl sm:text-2xl font-black">تمرين التنفس العميق لتصفية الذهن قبل الحفظ</h4>
+            <p class="text-purple-200 text-xs sm:text-sm mt-1 max-w-xl">
+              استنشاق الأكسجين بعمق ينشط تدفق الدماء النظيفة إلى فصوص الدماغ ويطرد التوتر، مما يهيئ الذاكرة لاستيعاب فوري ومضاعف!
+            </p>
+          </div>
+          
+          <button onclick="toggleBreathingExercise()" id="breath-btn" class="px-6 py-3 rounded-2xl bg-purple-500 hover:bg-purple-600 text-white font-black text-sm shadow-lg shadow-purple-500/40 transition active:scale-95 whitespace-nowrap self-start sm:self-auto">
+            ابدأ تمرين التنفس الآن 🧘
+          </button>
+        </div>
+
+        <!-- Interactive Breathing Box -->
+        <div id="breathing-widget" class="py-10 flex flex-col items-center justify-center text-center">
+          
+          <!-- Animated Breathing Circle -->
+          <div class="relative flex items-center justify-center">
+            <div id="breath-circle" class="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-gradient-to-tr from-purple-500 via-indigo-400 to-cyan-400 flex items-center justify-center text-white shadow-2xl transition-all duration-1000">
+              <span id="breath-instruction" class="text-lg sm:text-xl font-black">جاهز؟</span>
+            </div>
+          </div>
+
+          <div id="breath-timer" class="text-sm font-bold text-purple-200 mt-6">
+            اضغط "ابدأ تمرين التنفس" لتجربة 3 دورات مهدئة للعقل
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Feature 3: الرسم والتلوين لتنشيط الفص الأيمن 🎨 -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-2 text-xl font-black text-slate-900">
+          <span>🎨</span>
+          <h4>الرسم والتلوين: المفتاح السحري للفص الأيمن</h4>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          الفص الأيسر للدماغ مسؤول عن الكلمات والأرقام والمنطق، بينما الفص الأيمن مسؤول عن الألوان والخيال والأشكال. عندما ترسم وتلون أثناء المذاكرة، فإنك تشغل كلا الفصين معاً، مما يرفع ثبات المعلومة بنسبة <strong>300%</strong>!
+        </p>
+
+        <!-- Interactive Mini Doodle Board -->
+        <div class="p-6 rounded-3xl bg-slate-50 border-2 border-dashed border-purple-200 space-y-4">
+          
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <span class="font-black text-slate-800 text-sm">لوحة الخربشة والتنشيط الإبداعي 🖍️</span>
+              <p class="text-[11px] text-slate-500">جرب رسم رمز أو كلمة تذكرك بهدفك اليوم، وتأمل كيف ينتبه عقلك!</p>
+            </div>
+
+            <!-- Color controls -->
+            <div class="flex items-center gap-2">
+              <button onclick="setPenColor('#7c3aed')" class="w-7 h-7 rounded-full bg-purple-600 ring-2 ring-offset-2 ring-purple-600 focus:outline-none"></button>
+              <button onclick="setPenColor('#2563eb')" class="w-7 h-7 rounded-full bg-blue-600 focus:outline-none"></button>
+              <button onclick="setPenColor('#059669')" class="w-7 h-7 rounded-full bg-emerald-600 focus:outline-none"></button>
+              <button onclick="setPenColor('#dc2626')" class="w-7 h-7 rounded-full bg-red-600 focus:outline-none"></button>
+              <button onclick="setPenColor('#d97706')" class="w-7 h-7 rounded-full bg-amber-600 focus:outline-none"></button>
+              <button onclick="clearCanvas()" class="px-3 py-1 bg-white border border-slate-200 text-slate-600 text-xs font-bold rounded-lg hover:bg-slate-100 transition">
+                مسح 🗑️
+              </button>
+            </div>
+          </div>
+
+          <!-- Canvas Element -->
+          <div class="bg-white rounded-2xl border border-slate-300 shadow-inner overflow-hidden">
+            <canvas id="drawingCanvas" width="800" height="240" class="w-full h-48 sm:h-56 block"></canvas>
+          </div>
+
+          <div class="flex items-center justify-between text-xs text-slate-400 font-semibold">
+            <span>استخدم الماوس أو إصبعك للرسم بحرية</span>
+            <span class="text-purple-600 font-bold">تنشيط فوري للفص الأيمن ✨</span>
+          </div>
+
+        </div>
+
+        <div class="text-center pt-2">
+          <span class="inline-block text-[11px] text-slate-500 font-bold bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200">
+            📸 <em>اقتراح صورة: رسم لطيف يجمع طبق أكل صحي + أيقونة تنفس + فرشة ألوان مبهجة</em>
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Interactive Quick Quiz: اختبر فهمك في المحاضرة الأولى -->
+    <section id="quiz-section" class="bg-gradient-to-br from-purple-50 via-indigo-50 to-pink-50 rounded-3xl p-6 sm:p-10 border-2 border-purple-200 shadow-lg space-y-6">
+      
+      <div class="text-center max-w-xl mx-auto space-y-2">
+        <div class="inline-block px-3 py-1 bg-purple-200 text-purple-900 rounded-full text-xs font-black">
+          🎯 التحدي النهائي للمحاضرة
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900">
+          اختبر استيعابك للمحاضرة الأولى! 🏆
+        </h3>
+        <p class="text-slate-600 text-xs sm:text-sm font-semibold">
+          أجب على الـ 3 أسئلة السريعة وتأكد من ثبات المعلومات في ذاكرتك
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto space-y-4">
+        
+        <!-- Question 1 -->
+        <div class="p-5 bg-white rounded-2xl border border-purple-100 shadow-sm space-y-3">
+          <div class="font-black text-slate-800 text-sm sm:text-base">
+            1. ما هي الذاكرة المسؤولة عن التخزين الدائم لأسماء العائلة وسور القرآن؟
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <button onclick="checkQuiz(1, 'a', this)" class="q1-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition">
+              الذاكرة الحسية
+            </button>
+            <button onclick="checkQuiz(1, 'b', this)" class="q1-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition">
+              الذاكرة قصيرة المدى
+            </button>
+            <button onclick="checkQuiz(1, 'c', this)" class="q1-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition" data-correct="true">
+              الذاكرة طويلة المدى ✨
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="p-5 bg-white rounded-2xl border border-purple-100 shadow-sm space-y-3">
+          <div class="font-black text-slate-800 text-sm sm:text-base">
+            2. انخفاض استخدام الدماغ عند التقدم في العمر سببه:
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <button onclick="checkQuiz(2, 'a', this)" class="q2-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition" data-correct="true">
+              قلة الاستخدام والتدريب وليس نقص القدرة الأصلية ✅
+            </button>
+            <button onclick="checkQuiz(2, 'b', this)" class="q2-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition">
+              تلف نهائي غير قابل للإصلاح
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="p-5 bg-white rounded-2xl border border-purple-100 shadow-sm space-y-3">
+          <div class="font-black text-slate-800 text-sm sm:text-base">
+            3. استخدام الرسم والتلوين يساعد في تثبيت الحفظ لأنه:
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <button onclick="checkQuiz(3, 'a', this)" class="q3-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition" data-correct="true">
+              يُنشط الفص الأيمن الإبداعي مع الفص الأيسر 🎨
+            </button>
+            <button onclick="checkQuiz(3, 'b', this)" class="q3-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition">
+              يجعل وقت المذاكرة يمر ببطء
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="quiz-congrats" class="hidden text-center p-6 bg-white rounded-2xl border-2 border-emerald-400 max-w-xl mx-auto shadow-md">
+        <div class="text-4xl animate-bounce">🎉🏆</div>
+        <h4 class="text-xl font-black text-emerald-800 mt-2">رائع جداً! استيعاب ممتاز 100%</h4>
+        <p class="text-slate-600 text-xs mt-1">لقد أتقنت المفاهيم الأساسية للمحاضرة الأولى بنجاح واقتدار!</p>
+      </div>
+
+    </section>
+
+    <!-- Navigation between lectures -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition shadow-sm">
+        <span>← العودة للصفحة الرئيسية وفهرس الكورس</span>
+      </a>
+
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-purple-100 text-purple-800 font-black text-sm">
+        <span>المحاضرة 2: أسرار حفظ القرآن وتثبيت الآيات (قريباً ⏳)</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive JavaScript for Lecture 1 -->
+  <script>
+    // 1. Senses Interactive Selector
+    const senseData = {
+      hearing: {
+        icon: '🎧',
+        title: 'حاسة السمع (الذاكرة السمعية):',
+        text: 'ترتيل القرآن بأصوات المشايخ ونغماتهم يرسم ذكريات صوتية راسخة في الدماغ. عندما تقرأ بصوت مسموع، يستقبل الفص الصدغي ذبذبات صوتك فيزيد التثبيت ضعفين!'
+      },
+      sight: {
+        icon: '👁️',
+        title: 'حاسة البصر (الذاكرة الصورية):',
+        text: 'يمثل الإدراك البصري أكثر من 70% من مدخلات الدماغ! عندما تربط حفظ آية بمكانها في المصحف (أعلى الصفحة أو أسفلها)، فإنك تستدعي صورة الصفحة مباشرة في ذهنك.'
+      },
+      smell: {
+        icon: '👃',
+        title: 'حاسة الشم (أقوى رابط عاطفي):',
+        text: 'حاسة الشم هي الحاسة الوحيدة المرتبطة مباشرة بالجهاز الحوفي (Limbic System) المسؤول عن العواطف والذكريات. ربط جلسة المذاكرة برائحة عطر أو بخور معين يجعل استرجاع المعلومات أسرع بكثير عند شم نفس الرائحة في الامتحان!'
+      },
+      touch: {
+        icon: '✋',
+        title: 'حاسة اللمس (الذاكرة العضلية والحركية):',
+        text: 'الكتابة بالقلم على الورق وتمرير الأصابع على الكلمات ينشط مسارات عصبية حسية-حركية تثبت المعلومة بعمق يتجاوز مجرد القراءة بالعين.'
+      },
+      taste: {
+        icon: '👅',
+        title: 'حاسة التذوق (المنبه الحسي):',
+        text: 'نكهة معينة أثناء الحفظ (مثل النعناع أو الليمون) تحفز النواقل العصبية وتطرد الخمول الذهني الفوري.'
+      }
+    };
+
+    function selectSense(senseKey) {
+      document.querySelectorAll('.sense-btn').forEach(btn => {
+        btn.classList.remove('bg-purple-50', 'border-purple-500', 'shadow-sm');
+        btn.classList.add('bg-slate-50', 'border-slate-200');
+        btn.querySelector('span:nth-child(2)').classList.remove('text-purple-900');
+        btn.querySelector('span:nth-child(2)').classList.add('text-slate-800');
+      });
+
+      const activeBtn = document.getElementById('sense-' + senseKey);
+      activeBtn.classList.add('bg-purple-50', 'border-purple-500', 'shadow-sm');
+      activeBtn.classList.remove('bg-slate-50', 'border-slate-200');
+      activeBtn.querySelector('span:nth-child(2)').classList.add('text-purple-900');
+
+      const data = senseData[senseKey];
+      const display = document.getElementById('sense-display');
+      display.innerHTML = `
+        <span class="text-4xl">${data.icon}</span>
+        <div>
+          <h5 class="font-black text-purple-900 text-base">${data.title}</h5>
+          <p class="text-slate-700 text-xs sm:text-sm mt-0.5">${data.text}</p>
+        </div>
+      `;
+    }
+
+    // 2. Short Term Memory Quick Test
+    let targetRandomNumber = '';
+    function startQuickNumberTest() {
+      targetRandomNumber = Math.floor(100000 + Math.random() * 900000).toString();
+      const container = document.getElementById('test-container');
+      const numDisplay = document.getElementById('number-display');
+      const inputContainer = document.getElementById('input-container');
+      const result = document.getElementById('test-result');
+      
+      container.classList.remove('hidden');
+      numDisplay.classList.remove('hidden');
+      inputContainer.classList.add('hidden');
+      result.textContent = '';
+      document.getElementById('user-number-input').value = '';
+
+      let countdown = 3;
+      numDisplay.textContent = targetRandomNumber;
+      
+      const timer = setInterval(() => {
+        countdown--;
+        if (countdown <= 0) {
+          clearInterval(timer);
+          numDisplay.classList.add('hidden');
+          inputContainer.classList.remove('hidden');
+          document.getElementById('user-number-input').focus();
+        }
+      }, 1000);
+    }
+
+    function verifyNumberTest() {
+      const userInput = document.getElementById('user-number-input').value.trim();
+      const result = document.getElementById('test-result');
+      if (userInput === targetRandomNumber) {
+        result.innerHTML = `<span class="text-emerald-600">🎉 إجابة صحيحة خارقة! ذاكرتك قصيرة المدى ممتازة! الرقم كان: ${targetRandomNumber}</span>`;
+        if (typeof confetti === 'function') confetti();
+      } else {
+        result.innerHTML = `<span class="text-rose-600">حاول مرة أخرى! الرقم كان: ${targetRandomNumber} وأنت كتبت: ${userInput || 'فارغ'}. اضغط الزر لإعادة المحاولة.</span>`;
+      }
+    }
+
+    // 3. Guided Breathing Exercise (4-4-6 Relaxing Flow)
+    let breathingInterval = null;
+    let isBreathing = false;
+
+    function toggleBreathingExercise() {
+      const btn = document.getElementById('breath-btn');
+      const circle = document.getElementById('breath-circle');
+      const instruction = document.getElementById('breath-instruction');
+      const timerText = document.getElementById('breath-timer');
+
+      if (isBreathing) {
+        clearInterval(breathingInterval);
+        isBreathing = false;
+        btn.textContent = 'ابدأ تمرين التنفس الآن 🧘';
+        circle.style.transform = 'scale(1)';
+        instruction.textContent = 'جاهز؟';
+        timerText.textContent = 'توقف التمرين. يمكنك البدء مجدداً في أي وقت.';
+        return;
+      }
+
+      isBreathing = true;
+      btn.textContent = 'إيقاف التمرين ⏸️';
+      
+      let phase = 0; // 0: inhale (4s), 1: hold (4s), 2: exhale (6s)
+      let sec = 0;
+
+      function updatePhase() {
+        if (phase === 0) {
+          // Inhale
+          instruction.textContent = 'شهيق عميق... 🌬️';
+          circle.style.transform = 'scale(1.35)';
+          circle.style.backgroundColor = '#8b5cf6';
+          timerText.textContent = 'املأ رئتيك بالهواء النقي والأكسجين المنشط لدماغك...';
+        } else if (phase === 1) {
+          // Hold
+          instruction.textContent = 'احبس أنفاسك ⏸️';
+          circle.style.transform = 'scale(1.35)';
+          circle.style.backgroundColor = '#06b6d4';
+          timerText.textContent = 'دع الأكسجين يتشبع في خلايا دماغك وفصوصه...';
+        } else {
+          // Exhale
+          instruction.textContent = 'زفير هادئ... 😌';
+          circle.style.transform = 'scale(0.85)';
+          circle.style.backgroundColor = '#6366f1';
+          timerText.textContent = 'اطرد أي توتر أو ضغط أو تشتت مع الزفير...';
+        }
+      }
+
+      updatePhase();
+      breathingInterval = setInterval(() => {
+        sec++;
+        if (phase === 0 && sec >= 4) {
+          phase = 1;
+          sec = 0;
+          updatePhase();
+        } else if (phase === 1 && sec >= 4) {
+          phase = 2;
+          sec = 0;
+          updatePhase();
+        } else if (phase === 2 && sec >= 6) {
+          phase = 0;
+          sec = 0;
+          updatePhase();
+        }
+      }, 1000);
+    }
+
+    // 4. Interactive Canvas Drawing Pad
+    const canvas = document.getElementById('drawingCanvas');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
+    let currentColor = '#7c3aed';
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = currentColor;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    setTimeout(resizeCanvas, 100);
+
+    function setPenColor(color) {
+      currentColor = color;
+      ctx.strokeStyle = color;
+    }
+
+    function clearCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function getCoords(e) {
+      const rect = canvas.getBoundingClientRect();
+      const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+      const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+      return {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+      };
+    }
+
+    function startDraw(e) {
+      isDrawing = true;
+      const coords = getCoords(e);
+      ctx.beginPath();
+      ctx.moveTo(coords.x, coords.y);
+    }
+
+    function draw(e) {
+      if (!isDrawing) return;
+      e.preventDefault();
+      const coords = getCoords(e);
+      ctx.lineTo(coords.x, coords.y);
+      ctx.stroke();
+    }
+
+    function stopDraw() {
+      isDrawing = false;
+    }
+
+    canvas.addEventListener('mousedown', startDraw);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDraw);
+    canvas.addEventListener('mouseleave', stopDraw);
+
+    canvas.addEventListener('touchstart', startDraw, { passive: false });
+    canvas.addEventListener('touchmove', draw, { passive: false });
+    canvas.addEventListener('touchend', stopDraw);
+
+    // 5. Quiz Logic
+    let answered = { 1: false, 2: false, 3: false };
+
+    function checkQuiz(qNum, choice, btn) {
+      const isCorrect = btn.getAttribute('data-correct') === 'true';
+      const buttons = document.querySelectorAll(`.q${qNum}-btn`);
+      
+      buttons.forEach(b => {
+        b.classList.remove('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'bg-rose-100', 'border-rose-500', 'text-rose-900');
+      });
+
+      if (isCorrect) {
+        btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900');
+        answered[qNum] = true;
+      } else {
+        btn.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-900');
+        answered[qNum] = false;
+      }
+
+      if (answered[1] && answered[2] && answered[3]) {
+        document.getElementById('quiz-congrats').classList.remove('hidden');
+        if (typeof confetti === 'function') {
+          confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>
