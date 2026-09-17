@@ -1072,12 +1072,27 @@
           </div>
         </div>
 
+        <!-- Question 5: الإهمال وعدم التنظيم (مثال المفتاح) -->
+        <div class="p-5 bg-white rounded-2xl border border-purple-100 shadow-sm space-y-3">
+          <div class="font-black text-slate-800 text-sm sm:text-base">
+            5. نسيان مكان المفاتيح عند الدخول للشقة سريعاً ووضعها في أي مكان سببه الحقيقي:
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <button onclick="checkQuiz(5, 'a', this)" class="q5-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition" data-correct="true">
+              الإهمال وعدم التنظيم وليس تلف الذاكرة 🔑
+            </button>
+            <button onclick="checkQuiz(5, 'b', this)" class="q5-btn p-3 rounded-xl border border-slate-200 hover:bg-purple-50 text-xs font-bold text-slate-700 text-center transition">
+              فقدان دائم للذاكرة لا يمكن علاجه
+            </button>
+          </div>
+        </div>
+
       </div>
 
       <div id="quiz-congrats" class="hidden text-center p-6 bg-white rounded-2xl border-2 border-emerald-400 max-w-xl mx-auto shadow-md">
         <div class="text-4xl animate-bounce">🎉🏆</div>
-        <h4 class="text-xl font-black text-emerald-800 mt-2">ممتاز جداً! استيعاب كامل للمحاضرة الأولى</h4>
-        <p class="text-slate-600 text-xs mt-1">لقد أتقنت المفاهيم الأساسية، والآن حان وقت تطبيق مهمة حفظ صفحة القرآن والتلوين!</p>
+        <h4 class="text-xl font-black text-emerald-800 mt-2">ممتاز جداً! إتقان تام للمحاضرة الأولى (5 من 5)</h4>
+        <p class="text-slate-600 text-xs mt-1">لقد أتقنت كافة المفاهيم الأساسية، والآن حان وقت الانتقال للمحاضرة الثانية!</p>
       </div>
 
     </section>
@@ -1314,8 +1329,8 @@
       }
     }
 
-    // 5. Quiz Logic (4 Questions)
-    let answered = { 1: false, 2: false, 3: false, 4: false };
+    // 5. Quiz Logic (5 Questions)
+    let answered = { 1: false, 2: false, 3: false, 4: false, 5: false };
 
     function checkQuiz(qNum, choice, btn) {
       const isCorrect = btn.getAttribute('data-correct') === 'true';
@@ -1333,7 +1348,7 @@
         answered[qNum] = false;
       }
 
-      if (answered[1] && answered[2] && answered[3] && answered[4]) {
+      if (answered[1] && answered[2] && answered[3] && answered[4] && answered[5]) {
         document.getElementById('quiz-congrats').classList.remove('hidden');
         if (typeof confetti === 'function') {
           confetti({
