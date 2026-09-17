@@ -40,5 +40,5 @@
 
 ## 🌐 النشر:
 تم إعداد هذا المشروع ليتم رفعه مباشرة ونشره مجاناً عبر **GitHub Pages**:
-- Repository: `https://github.com/rowanaasar/memoeycourse.git`
+- Repository: `https://github.com/rowanaasar/memory_course.git`
 - فرع النشر: `main`
