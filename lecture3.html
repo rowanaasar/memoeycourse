@@ -254,72 +254,271 @@
         </div>
       </div>
 
-      <!-- التمرين 1: القراءة المعكوسة -->
-      <div class="p-6 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 space-y-4">
-        <div class="flex items-center justify-between">
-          <span class="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-xs font-black">التمرين الأول</span>
-          <span class="text-2xl">🔄📖</span>
-        </div>
-        <h4 class="text-lg font-black text-slate-900">1. تمرين القراءة المعكوسة (Reverse Reading)</h4>
-        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-          عندما نقرأ بالطريقة العادية، يعمل الدماغ بـ "الطيار الآلي". ولكن عندما تقرأ الكلمات من اليسار إلى اليمين أو الجملة من نهايتها لبدايتها، فإنك تُجبر خلايا التركيز على الاستيقاظ والتحليل الحرفي الدقيق!
-        </p>
+      <!-- التمرين 1: القراءة المعكوسة (نوعان: كلمات معكوسة وحروف معكوسة) -->
+      <div class="p-6 rounded-3xl bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border-2 border-indigo-200 space-y-6 shadow-sm">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-indigo-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black text-lg shadow-md shadow-indigo-500/20">🔄</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 bg-indigo-200 text-indigo-900 rounded-full text-xs font-black">التمرين الأول</span>
+                <h4 class="text-xl font-black text-slate-900">تمرين القراءة المعكوسة (Reverse Reading)</h4>
+              </div>
+              <p class="text-slate-600 text-xs sm:text-sm mt-0.5">كسر الروتين البصري وإجبار الدماغ على فك الرموز بالتحليل النشط</p>
+            </div>
+          </div>
 
-        <!-- Interactive Reverse Reading Challenge Box -->
-        <div class="p-4 bg-white rounded-xl border border-blue-200 space-y-3">
-          <span class="text-xs font-black text-indigo-700 block">جرب الآن قراءة هذا النص المعكوس ذهنياً واكتشف معناه الأصلي:</span>
+          <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-xl border border-indigo-200 text-xs font-bold text-indigo-800 self-start sm:self-auto">
+            <span>✨ تدريبان منفصلان:</span>
+            <span class="text-indigo-600 font-black">1. عكس الكلمات | 2. عكس الحروف</span>
+          </div>
+        </div>
+
+        <!-- ================= الجزء (أ): عكس ترتيب الكلمات ================= -->
+        <div class="bg-white rounded-2xl p-5 border border-indigo-200 space-y-4 shadow-sm">
           
-          <div class="p-3 bg-slate-100 rounded-lg text-slate-800 font-mono font-bold text-base sm:text-lg tracking-widest text-center select-none" dir="ltr">
-            .نآرقلا ظفحب يرثك عَفَنْتَي يذلا مِيقَتْسُملا قيرَّطلا وه ُزيكْرَّتلا
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-xs">أ</span>
+              <h5 class="text-base font-black text-slate-800">أولاً: عكس ترتيب الكلمات في الجملة (Word Reverse)</h5>
+            </div>
+            <span class="text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full font-bold border border-blue-200">
+              قراءة الكلمات بترتيب عكسي
+            </span>
           </div>
 
-          <button onclick="toggleReverseAnswer()" class="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 transition">
-            اضغط لإظهار المعنى الأصلي 👁️
-          </button>
-
-          <div id="reverse-ans" class="hidden p-3 bg-emerald-50 border border-emerald-200 rounded-lg text-xs sm:text-sm font-black text-emerald-900">
-            ✅ المعنى الأصلي: "التركيز هو الطريق المستقيم الذي ينتفع كثيراً بحفظ القرآن."
+          <!-- مثال توضيحي للشرح -->
+          <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
+            <div class="font-black text-blue-900 flex items-center gap-1.5">
+              <span>💡 مثال توضيحي لطريقة التمرين:</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 font-semibold text-slate-700">
+              <div class="p-2 bg-white rounded-lg border border-blue-100">
+                <span class="text-rose-600 font-bold block text-[11px]">الكلام بالترتيب المعكوس:</span>
+                "السليم الجسم في السليم العقل"
+              </div>
+              <div class="p-2 bg-white rounded-lg border border-blue-100">
+                <span class="text-emerald-600 font-bold block text-[11px]">المعنى الأصلي الصحيح:</span>
+                "العقل السليم في الجسم السليم"
+              </div>
+            </div>
+            <p class="text-slate-500 text-[11px] pt-1">
+              • المطلوب: تقرأ الكلمات المعكوسة، وتجمعها في عقلك لتعيد تركيب الجملة السليمة في ثوانٍ معدودة.
+            </p>
           </div>
+
+          <!-- مختبر التحدي التفاعلي للجمل المعكوسة كلماتياً (5 جمل) -->
+          <div class="p-4 bg-gradient-to-br from-slate-50 to-blue-50/40 rounded-xl border border-blue-200 space-y-3">
+            
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black text-indigo-900">اختر الجملة للتحدي:</span>
+                <div class="inline-flex gap-1" id="word-reverse-buttons">
+                  <button onclick="selectWordSentence(0)" class="word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-indigo-600 text-white shadow-sm transition">1</button>
+                  <button onclick="selectWordSentence(1)" class="word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">2</button>
+                  <button onclick="selectWordSentence(2)" class="word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">3</button>
+                  <button onclick="selectWordSentence(3)" class="word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">4</button>
+                  <button onclick="selectWordSentence(4)" class="word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">5</button>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button onclick="prevWordSentence()" class="px-3 py-1 bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold rounded-lg transition">
+                  السابقة ➡️
+                </button>
+                <button onclick="nextWordSentence()" class="px-3 py-1 bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold rounded-lg transition">
+                  التالية ⬅️
+                </button>
+              </div>
+            </div>
+
+            <!-- بطاقة الجملة المعروضة -->
+            <div class="p-4 bg-white rounded-xl border border-indigo-100 shadow-sm text-center space-y-2">
+              <span class="text-[11px] font-bold text-indigo-500 uppercase tracking-wider block" id="word-sentence-indicator">الجملة (1 من 5) - رتب الكلمات ذهنياً:</span>
+              <div id="word-sentence-display" class="text-base sm:text-lg font-black text-slate-900 font-mono tracking-wide py-1 select-none">
+                "النجاح طريق هو والاجتهاد الصبر"
+              </div>
+            </div>
+
+            <!-- زر إظهار الحل الأصلي -->
+            <div class="space-y-2">
+              <button onclick="toggleWordAnswer()" id="word-ans-btn" class="w-full sm:w-auto px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-black rounded-xl shadow-sm transition">
+                اضغط لإظهار المعنى الأصلي الصحيح 👁️
+              </button>
+
+              <div id="word-ans-box" class="hidden p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs sm:text-sm font-black text-emerald-900 flex items-center justify-between">
+                <span id="word-ans-text">✅ الجملة الأصلية: "الصبر والاجتهاد هو طريق النجاح."</span>
+                <span class="text-xs text-emerald-700 bg-white px-2 py-0.5 rounded-lg border border-emerald-200">أحسنت!</span>
+              </div>
+            </div>
+
+          </div>
+
         </div>
+
+        <!-- ================= الجزء (ب): عكس الحروف داخل الجملة ================= -->
+        <div class="bg-white rounded-2xl p-5 border border-purple-200 space-y-4 shadow-sm">
+          
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-black text-xs">ب</span>
+              <h5 class="text-base font-black text-slate-800">ثانياً: عكس الحروف داخل الجملة (Letter Reverse)</h5>
+            </div>
+            <span class="text-xs bg-purple-50 text-purple-700 px-2.5 py-1 rounded-full font-bold border border-purple-200">
+              قراءة الحروف المقلوبة من اليسار لليمين
+            </span>
+          </div>
+
+          <!-- مثال توضيحي للشرح -->
+          <div class="p-3.5 bg-purple-50/70 border border-purple-200 rounded-xl space-y-1.5 text-xs">
+            <div class="font-black text-purple-900 flex items-center gap-1.5">
+              <span>💡 مثال توضيحي لطريقة قراءة الحروف المعكوسة:</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 font-semibold text-slate-700">
+              <div class="p-2 bg-white rounded-lg border border-purple-100">
+                <span class="text-rose-600 font-bold block text-[11px]">الحروف معكوسة (من اليسار لليمين):</span>
+                <span class="font-mono text-sm tracking-widest block text-center" dir="ltr">ة ض ي ر ف &nbsp; م ل ع ل ا &nbsp; ب ل ط</span>
+              </div>
+              <div class="p-2 bg-white rounded-lg border border-purple-100">
+                <span class="text-emerald-600 font-bold block text-[11px]">الجملة الأصلية المقروءة:</span>
+                "طلب العلم فريضة"
+              </div>
+            </div>
+            <p class="text-slate-500 text-[11px] pt-1">
+              • المطلوب: تنظر إلى الحروف المعكوسة بعينك وتقرأها من اليسار إلى اليمين لتتجمع الكلمة بذهنك بوضوح.
+            </p>
+          </div>
+
+          <!-- مختبر التحدي التفاعلي للجمل المعكوسة حرفياً (5 جمل) -->
+          <div class="p-4 bg-gradient-to-br from-slate-50 to-purple-50/40 rounded-xl border border-purple-200 space-y-3">
+            
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black text-purple-900">اختر الجملة للتحدي:</span>
+                <div class="inline-flex gap-1" id="letter-reverse-buttons">
+                  <button onclick="selectLetterSentence(0)" class="letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-purple-600 text-white shadow-sm transition">1</button>
+                  <button onclick="selectLetterSentence(1)" class="letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">2</button>
+                  <button onclick="selectLetterSentence(2)" class="letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">3</button>
+                  <button onclick="selectLetterSentence(3)" class="letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">4</button>
+                  <button onclick="selectLetterSentence(4)" class="letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">5</button>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button onclick="prevLetterSentence()" class="px-3 py-1 bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold rounded-lg transition">
+                  السابقة ➡️
+                </button>
+                <button onclick="nextLetterSentence()" class="px-3 py-1 bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold rounded-lg transition">
+                  التالية ⬅️
+                </button>
+              </div>
+            </div>
+
+            <!-- بطاقة الجملة المعروضة بحروف معكوسة -->
+            <div class="p-4 bg-white rounded-xl border border-purple-100 shadow-sm text-center space-y-2">
+              <span class="text-[11px] font-bold text-purple-500 uppercase tracking-wider block" id="letter-sentence-indicator">الجملة (1 من 5) - اقرأ الحروف واكتشف الكلمات:</span>
+              <div id="letter-sentence-display" class="text-base sm:text-lg font-black text-slate-900 font-mono tracking-widest py-2 select-none" dir="ltr">
+                م ي ل س ل ا &nbsp;&nbsp; م س ج ل ا &nbsp;&nbsp; ي ف &nbsp;&nbsp; م ي ل س ل ا &nbsp;&nbsp; ل ق ع ل ا
+              </div>
+            </div>
+
+            <!-- زر إظهار الحل الأصلي -->
+            <div class="space-y-2">
+              <button onclick="toggleLetterAnswer()" id="letter-ans-btn" class="w-full sm:w-auto px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white text-xs font-black rounded-xl shadow-sm transition">
+                اضغط لإظهار الجملة الأصلية 👁️
+              </button>
+
+              <div id="letter-ans-box" class="hidden p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs sm:text-sm font-black text-emerald-900 flex items-center justify-between">
+                <span id="letter-ans-text">✅ الجملة الأصلية: "العقل السليم في الجسم السليم."</span>
+                <span class="text-xs text-emerald-700 bg-white px-2 py-0.5 rounded-lg border border-emerald-200">تركيز رائع!</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <!-- التمرين 2: عد الكلمات في الأسطر (نص 5 أسطر مع شروط صارمة) -->
-      <div class="p-6 rounded-2xl bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 space-y-4">
-        <div class="flex items-center justify-between">
-          <span class="px-3 py-1 bg-purple-200 text-purple-900 rounded-full text-xs font-black">التمرين الثاني ⭐</span>
-          <span class="text-2xl">📝👀</span>
+      <!-- التمرين 2: عد الكلمات في الأسطر (نماذج متعددة تفاعلية مع شروط صارمة) -->
+      <div class="p-6 rounded-3xl bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 space-y-5 shadow-sm">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-purple-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-purple-600 text-white flex items-center justify-center font-black text-lg shadow-md shadow-purple-500/20">📝</span>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 bg-purple-200 text-purple-900 rounded-full text-xs font-black">التمرين الثاني ⭐</span>
+                <h4 class="text-xl font-black text-slate-900">تمرين عد الكلمات في الأسطر (بالعين والذهن فقط!)</h4>
+              </div>
+              <p class="text-slate-600 text-xs sm:text-sm mt-0.5">نماذج متعددة لاختبار دقة التركيز البصري والعد الصامت</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-xl border border-purple-200 text-xs font-bold text-purple-800 self-start sm:self-auto">
+            <span>📚 يحتوي على:</span>
+            <span class="text-purple-600 font-black">5 نصوص تدريبية مختلفة</span>
+          </div>
         </div>
-        <h4 class="text-lg font-black text-slate-900">2. تمرين عد الكلمات في الأسطر (بالعين والذهن فقط!)</h4>
         
         <!-- Strict Conditions Badge -->
         <div class="p-3.5 bg-amber-100 border border-amber-300 rounded-xl text-amber-950 text-xs font-bold space-y-1">
           <span class="block font-black text-amber-900">⚠️ الشروط الصارمة لهذا التمرين:</span>
-          <p>• <strong>ممنوع العد بصوت نهائياً</strong> (لا تهمس ولا تحرك شفتيك).</p>
-          <p>• <strong>ممنوع الإشارة بالإصبع أو بالقلم</strong> (عينك وعقلك فقط هما من يقومان بالعد!).</p>
+          <p>• <strong>ممنوع العد بصوت نهائياً</strong> (لا تهمس ولا تحرك شفتيك بذكر الأرقام).</p>
+          <p>• <strong>ممنوع الإشارة بالإصبع أو بالقلم</strong> (عينك وعقلك فقط هما من يقومان بمسح الأسطر والعد!).</p>
         </div>
 
-        <!-- 5-Line Text Box to count words -->
-        <div class="p-5 bg-white rounded-xl border border-purple-200 space-y-3">
-          <span class="text-xs font-black text-purple-800 block">نص التمرين (5 أسطر) - قم بعد كلماته الآن بعينيك فقط:</span>
+        <!-- Box with Multiple Texts & Navigation -->
+        <div class="p-5 bg-white rounded-2xl border border-purple-200 space-y-4 shadow-sm">
           
-          <div id="count-text-sample" class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-slate-800 font-semibold text-sm sm:text-base leading-loose select-none">
-            إن العقل البشري يمتلك طاقات مذهلة تتجدد بالتدريب اليومي المستمر.<br>
-            وعندما يتخلص الطالب من مشتتات الهاتف والضوضاء يتضاعف استيعابه بشكل ملحوظ.<br>
-            والحفظ المتقن يحتاج إلى هدوء تام ونية صادقة واستعانة دائمة بالخالق.<br>
-            كما أن تكرار التمارين التراكمية يوقظ الفص الأيمن الإبداعي مع الفص الأيسر.<br>
-            فاصبر وواظب على أداء مهامك لتصل إلى قمة الذاكرة الخارقة.
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-black text-slate-800">اختر نص التمرين:</span>
+              <div class="inline-flex gap-1" id="word-count-buttons">
+                <button onclick="selectCountSample(0)" class="count-btn px-3 py-1 text-xs font-black rounded-lg bg-purple-600 text-white shadow-sm transition">النص 1</button>
+                <button onclick="selectCountSample(1)" class="count-btn px-3 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">النص 2</button>
+                <button onclick="selectCountSample(2)" class="count-btn px-3 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">النص 3</button>
+                <button onclick="selectCountSample(3)" class="count-btn px-3 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">النص 4</button>
+                <button onclick="selectCountSample(4)" class="count-btn px-3 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">النص 5</button>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button onclick="prevCountSample()" class="px-3 py-1 bg-slate-50 border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold rounded-lg transition">
+                السابق ➡️
+              </button>
+              <button onclick="nextCountSample()" class="px-3 py-1 bg-slate-50 border border-slate-200 hover:bg-slate-100 text-slate-700 text-xs font-bold rounded-lg transition">
+                التالي ⬅️
+              </button>
+            </div>
+          </div>
+
+          <!-- عنوان النص الحالي -->
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-black text-purple-900" id="count-sample-title">📖 النص الأول (عن طاقات العقل والتركيز):</span>
+            <span class="text-slate-400 font-semibold" id="count-sample-lines">عدد الأسطر: 5 أسطر</span>
+          </div>
+
+          <!-- النص المعروض للعد -->
+          <div id="count-text-sample" class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 text-slate-800 font-semibold text-sm sm:text-base leading-loose select-none">
+            <!-- سيتم ملؤه بواسطة جافاسكربت -->
           </div>
 
           <!-- Interactive Word Guess Verification -->
-          <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
-            <span class="text-xs font-bold text-slate-600">كم كلمة قمت بعدّها في النص؟</span>
-            <input type="number" id="user-word-count" placeholder="اكتب العدد هنا..." class="px-4 py-2 border-2 border-purple-300 rounded-xl text-center font-bold text-sm w-40 focus:outline-none focus:border-purple-600">
-            <button onclick="verifyWordCount()" class="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs font-black transition">
-              تحقق من دقتك ✅
-            </button>
+          <div class="pt-2 p-3 bg-purple-50/50 rounded-xl border border-purple-100 flex flex-col sm:flex-row items-center gap-3">
+            <span class="text-xs font-bold text-slate-700">كم كلمة قمت بعدّها في هذا النص؟</span>
+            <div class="flex items-center gap-2">
+              <input type="number" id="user-word-count" placeholder="اكتب العدد..." class="px-4 py-2 border-2 border-purple-300 rounded-xl text-center font-bold text-sm w-36 focus:outline-none focus:border-purple-600 bg-white">
+              <button onclick="verifyWordCount()" class="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs font-black transition whitespace-nowrap shadow-sm">
+                تحقق من دقتك ✅
+              </button>
+            </div>
             <span id="word-count-feedback" class="text-xs font-black"></span>
           </div>
+
         </div>
+
       </div>
 
       <!-- التمرين 3: عد الأرقام ذهنياً بدون صوت -->
@@ -726,18 +925,256 @@
 
   <!-- Interactive JavaScript for Lecture 3 -->
   <script>
-    // 1. Reverse Reading Answer Toggle
-    function toggleReverseAnswer() {
-      const el = document.getElementById('reverse-ans');
-      el.classList.toggle('hidden');
+    // ==========================================
+    // 1. تمرين القراءة المعكوسة (عكس الكلمات)
+    // ==========================================
+    const wordSentences = [
+      {
+        display: '"النجاح طريق هو والاجتهاد الصبر"',
+        answer: 'الصبر والاجتهاد هو طريق النجاح.'
+      },
+      {
+        display: '"المعلومة استرجاع يسهل المستمر التكرار"',
+        answer: 'التكرار المستمر يسهل استرجاع المعلومة.'
+      },
+      {
+        display: '"الصدور ويشرح العقل ينور القرآن حفظ"',
+        answer: 'حفظ القرآن ينور العقل ويشرح الصدور.'
+      },
+      {
+        display: '"التركيز قوة يضاعف المشتتات تجنب"',
+        answer: 'تجنب المشتتات يضاعف قوة التركيز.'
+      },
+      {
+        display: '"الذاكرة تنشيط في يساهم الصحي الغذاء"',
+        answer: 'الغذاء الصحي يساهم في تنشيط الذاكرة.'
+      }
+    ];
+
+    let currentWordIndex = 0;
+
+    function renderWordSentence() {
+      const item = wordSentences[currentWordIndex];
+      document.getElementById('word-sentence-indicator').textContent = `الجملة (${currentWordIndex + 1} من ${wordSentences.length}) - رتب الكلمات ذهنياً:`;
+      document.getElementById('word-sentence-display').textContent = item.display;
+      document.getElementById('word-ans-text').textContent = `✅ الجملة الأصلية: "${item.answer}"`;
+      document.getElementById('word-ans-box').classList.add('hidden');
+      document.getElementById('word-ans-btn').textContent = 'اضغط لإظهار المعنى الأصلي الصحيح 👁️';
+
+      // Update button active state
+      const btns = document.querySelectorAll('#word-reverse-buttons .word-btn');
+      btns.forEach((btn, idx) => {
+        if (idx === currentWordIndex) {
+          btn.className = 'word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-indigo-600 text-white shadow-sm transition';
+        } else {
+          btn.className = 'word-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition';
+        }
+      });
     }
 
-    // 2. Word Count Verification
+    function selectWordSentence(idx) {
+      currentWordIndex = idx;
+      renderWordSentence();
+    }
+
+    function nextWordSentence() {
+      currentWordIndex = (currentWordIndex + 1) % wordSentences.length;
+      renderWordSentence();
+    }
+
+    function prevWordSentence() {
+      currentWordIndex = (currentWordIndex - 1 + wordSentences.length) % wordSentences.length;
+      renderWordSentence();
+    }
+
+    function toggleWordAnswer() {
+      const box = document.getElementById('word-ans-box');
+      const btn = document.getElementById('word-ans-btn');
+      if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        btn.textContent = 'إخفاء المعنى الأصلي 🙈';
+      } else {
+        box.classList.add('hidden');
+        btn.textContent = 'اضغط لإظهار المعنى الأصلي الصحيح 👁️';
+      }
+    }
+
+    // ==========================================
+    // 2. تمرين القراءة المعكوسة (عكس الحروف)
+    // ==========================================
+    const letterSentences = [
+      {
+        display: 'م ي ل س ل ا &nbsp;&nbsp; م س ج ل ا &nbsp;&nbsp; ي ف &nbsp;&nbsp; م ي ل س ل ا &nbsp;&nbsp; ل ق ع ل ا',
+        answer: 'العقل السليم في الجسم السليم.'
+      },
+      {
+        display: 'ي ل ا ع ل ا &nbsp;&nbsp; ز ي ك ر ت ل ا ب &nbsp;&nbsp; أ د ب ت &nbsp;&nbsp; ة ي و ق ل ا &nbsp;&nbsp; ة ر ك ا ذ ل ا',
+        answer: 'الذاكرة القوية تبدأ بالتركيز العالي.'
+      },
+      {
+        display: 'ب ل ق ل ا &nbsp;&nbsp; ي ف &nbsp;&nbsp; ر و ن &nbsp;&nbsp; م ي ر ك ل ا &nbsp;&nbsp; ن آ ر ق ل ا &nbsp;&nbsp; ظ ف ح',
+        answer: 'حفظ القرآن الكريم نور في القلب.'
+      },
+      {
+        display: 'غ ا م د ل ا &nbsp;&nbsp; ا ي ا ل خ &nbsp;&nbsp; ظ ق ي و ي &nbsp;&nbsp; ة ي م و ي ل ا &nbsp;&nbsp; ن ي ر ا م ت ل ا &nbsp;&nbsp; ر ا ر ك ت',
+        answer: 'تكرار التمارين اليومية يوقظ خلايا الدماغ.'
+      },
+      {
+        display: 'ر ت و ت ل ا و &nbsp;&nbsp; ت ت ش ت ل ا &nbsp;&nbsp; ل ي ز ي &nbsp;&nbsp; س ف ن ت ل ا و &nbsp;&nbsp; ء ا خ ر ت س ل ا',
+        answer: 'الاسترخاء والتنفس يزيل التشتت والتوتر.'
+      }
+    ];
+
+    let currentLetterIndex = 0;
+
+    function renderLetterSentence() {
+      const item = letterSentences[currentLetterIndex];
+      document.getElementById('letter-sentence-indicator').textContent = `الجملة (${currentLetterIndex + 1} من ${letterSentences.length}) - اقرأ الحروف واكتشف الكلمات:`;
+      document.getElementById('letter-sentence-display').innerHTML = item.display;
+      document.getElementById('letter-ans-text').textContent = `✅ الجملة الأصلية: "${item.answer}"`;
+      document.getElementById('letter-ans-box').classList.add('hidden');
+      document.getElementById('letter-ans-btn').textContent = 'اضغط لإظهار الجملة الأصلية 👁️';
+
+      // Update button active state
+      const btns = document.querySelectorAll('#letter-reverse-buttons .letter-btn');
+      btns.forEach((btn, idx) => {
+        if (idx === currentLetterIndex) {
+          btn.className = 'letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-purple-600 text-white shadow-sm transition';
+        } else {
+          btn.className = 'letter-btn px-2.5 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition';
+        }
+      });
+    }
+
+    function selectLetterSentence(idx) {
+      currentLetterIndex = idx;
+      renderLetterSentence();
+    }
+
+    function nextLetterSentence() {
+      currentLetterIndex = (currentLetterIndex + 1) % letterSentences.length;
+      renderLetterSentence();
+    }
+
+    function prevLetterSentence() {
+      currentLetterIndex = (currentLetterIndex - 1 + letterSentences.length) % letterSentences.length;
+      renderLetterSentence();
+    }
+
+    function toggleLetterAnswer() {
+      const box = document.getElementById('letter-ans-box');
+      const btn = document.getElementById('letter-ans-btn');
+      if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        btn.textContent = 'إخفاء الجملة الأصلية 🙈';
+      } else {
+        box.classList.add('hidden');
+        btn.textContent = 'اضغط لإظهار الجملة الأصلية 👁️';
+      }
+    }
+
+    // ==========================================
+    // 3. تمرين عد الكلمات في الأسطر (نماذج متعددة)
+    // ==========================================
+    const countSamples = [
+      {
+        title: '📖 النص الأول (عن طاقات العقل والتركيز):',
+        lines: 'عدد الأسطر: 5 أسطر',
+        html: `إن العقل البشري يمتلك طاقات مذهلة تتجدد بالتدريب اليومي المستمر.<br>
+وعندما يتخلص الطالب من مشتتات الهاتف والضوضاء يتضاعف استيعابه بشكل ملحوظ.<br>
+والحفظ المتقن يحتاج إلى هدوء تام ونية صادقة واستعانة دائمة بالخالق.<br>
+كما أن تكرار التمارين التراكمية يوقظ الفص الأيمن الإبداعي مع الفص الأيسر.<br>
+فاصبر وواظب على أداء مهامك لتصل إلى قمة الذاكرة الخارقة.`,
+        plainText: `إن العقل البشري يمتلك طاقات مذهلة تتجدد بالتدريب اليومي المستمر وعندما يتخلص الطالب من مشتتات الهاتف والضوضاء يتضاعف استيعابه بشكل ملحوظ والحفظ المتقن يحتاج إلى هدوء تام ونية صادقة واستعانة دائمة بالخالق كما أن تكرار التمارين التراكمية يوقظ الفص الأيمن الإبداعي مع الفص الأيسر فاصبر وواظب على أداء مهامك لتصل إلى قمة الذاكرة الخارقة`
+      },
+      {
+        title: '📖 النص الثاني (عن أسرار الحفظ قبل النوم):',
+        lines: 'عدد الأسطر: 4 أسطر',
+        html: `قراءة صفحة الحفظ مرتين بفهم عميق قبل النوم مباشرة تصنع فارقاً هائلاً في التثبيت.<br>
+فالعقل الباطن يظل يعمل طوال ساعات الليل في تنظيم المعلومات وتخزينها في الذاكرة الدائمة.<br>
+وعند الاستيقاظ مبكراً يجد الحافظ الآيات سهلة الانسياب على لسانه دون تردد.<br>
+وهذه من أعظم هدايا الخالق لدماغ الإنسان الواعي.`,
+        plainText: `قراءة صفحة الحفظ مرتين بفهم عميق قبل النوم مباشرة تصنع فارقاً هائلاً في التثبيت فالعقل الباطن يظل يعمل طوال ساعات الليل في تنظيم المعلومات وتخزينها في الذاكرة الدائمة وعند الاستيقاظ مبكراً يجد الحافظ الآيات سهلة الانسياب على لسانه دون تردد وهذه من أعظم هدايا الخالق لدماغ الإنسان الواعي`
+      },
+      {
+        title: '📖 النص الثالث (عن محاربة حيل الشيطان والتسويف):',
+        lines: 'عدد الأسطر: 5 أسطر',
+        html: `التسويف هو المدخل الأول والأخطر الذي يسرق ساعات الحفظ والمذاكرة الثمينة.<br>
+يوسوس الشيطان للنفس بتأجيل العمل إلى الغد أو بعد الراحة وتناول الطعام.<br>
+والعلاج الحاسم يبدأ بالاستعاذة الصادقة بالله والنهوض الفوري دون انتظار إذن من النفس.<br>
+فإذا بدأت بالدقيقة الأولى انكسر حاجز الكسل وتدفقت الهمة والعزيمة في عروقك.<br>
+فلا تدع التسويف يضيع عليك أجر ومكانة أهل القرآن.`,
+        plainText: `التسويف هو المدخل الأول والأخطر الذي يسرق ساعات الحفظ والمذاكرة الثمينة يوسوس الشيطان للنفس بتأجيل العمل إلى الغد أو بعد الراحة وتناول الطعام والعلاج الحاسم يبدأ بالاستعاذة الصادقة بالله والنهوض الفوري دون انتظار إذن من النفس فإذا بدأت بالدقيقة الأولى انكسر حاجز الكسل وتدفقت الهمة والعزيمة في عروقك فلا تدع التسويف يضيع عليك أجر ومكانة أهل القرآن`
+      },
+      {
+        title: '📖 النص الرابع (عن الغذاء الصحي والماء والرياضة):',
+        lines: 'عدد الأسطر: 4 أسطر',
+        html: `يحتاج الدماغ إلى وقود نظيف ليحافظ على يقظته وسرعة استجابته للأوامر العصبية.<br>
+شرب لترين من الماء يومياً وتناول المكسرات والخضروات يمنع التشتت والصداع المفاجئ.<br>
+كما أن ممارسة المشي الرياضي اليومي يضخ الدماء المحملة بالأكسجين لخلايا المخ.<br>
+فصحتك البدنية هي الحصن الأول لذاكرتك الفولاذية.`,
+        plainText: `يحتاج الدماغ إلى وقود نظيف ليحافظ على يقظته وسرعة استجابته للأوامر العصبية شرب لترين من الماء يومياً وتناول المكسرات والخضروات يمنع التشتت والصداع المفاجئ كما أن ممارسة المشي الرياضي اليومي يضخ الدماء المحملة بالأكسجين لخلايا المخ فصحتك البدنية هي الحصن الأول لذاكرتك الفولاذية`
+      },
+      {
+        title: '📖 النص الخامس (عن تنشيط الفصين بالكتابة والرسم):',
+        lines: 'عدد الأسطر: 5 أسطر',
+        html: `إن تدريب اليد غير السائدة على الكتابة والرسم يفتح مسارات عصبية جديدة وغير معتادة.<br>
+وعندما تمسك القلم بيدك اليسرى يضطر الفص الأيمن الإبداعي للاستيقاظ بكامل طاقته.<br>
+بينما يعمل الفص الأيسر على ضبط دقة الحروف والخطوط المتناسقة.<br>
+وهذا التناغم العصبي المزدوج يمنحك تركيزاً استثنائياً وقدرة عجيبة على استحضار الآيات.<br>
+فاجعل هذا التمرين عادة يومية تلازمك دائماً.`,
+        plainText: `إن تدريب اليد غير السائدة على الكتابة والرسم يفتح مسارات عصبية جديدة وغير معتادة وعندما تمسك القلم بيدك اليسرى يضطر الفص الأيمن الإبداعي للاستيقاظ بكامل طاقته بينما يعمل الفص الأيسر على ضبط دقة الحروف والخطوط المتناسقة وهذا التناغم العصبي المزدوج يمنحك تركيزاً استثنائياً وقدرة عجيبة على استحضار الآيات فاجعل هذا التمرين عادة يومية تلازمك دائماً`
+      }
+    ];
+
+    let currentCountIndex = 0;
+
+    function renderCountSample() {
+      const item = countSamples[currentCountIndex];
+      document.getElementById('count-sample-title').textContent = item.title;
+      document.getElementById('count-sample-lines').textContent = item.lines;
+      document.getElementById('count-text-sample').innerHTML = item.html;
+      document.getElementById('user-word-count').value = '';
+      document.getElementById('word-count-feedback').textContent = '';
+
+      // Update button active state
+      const btns = document.querySelectorAll('#word-count-buttons .count-btn');
+      btns.forEach((btn, idx) => {
+        if (idx === currentCountIndex) {
+          btn.className = 'count-btn px-3 py-1 text-xs font-black rounded-lg bg-purple-600 text-white shadow-sm transition';
+        } else {
+          btn.className = 'count-btn px-3 py-1 text-xs font-black rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition';
+        }
+      });
+    }
+
+    function selectCountSample(idx) {
+      currentCountIndex = idx;
+      renderCountSample();
+    }
+
+    function nextCountSample() {
+      currentCountIndex = (currentCountIndex + 1) % countSamples.length;
+      renderCountSample();
+    }
+
+    function prevCountSample() {
+      currentCountIndex = (currentCountIndex - 1 + countSamples.length) % countSamples.length;
+      renderCountSample();
+    }
+
     function verifyWordCount() {
       const userVal = parseInt(document.getElementById('user-word-count').value);
       const feedback = document.getElementById('word-count-feedback');
-      // The sample text has exactly 52 words
-      const actualCount = 52;
+      if (isNaN(userVal) || userVal <= 0) {
+        feedback.className = "text-xs font-black text-rose-600";
+        feedback.textContent = 'يرجى كتابة عدد الكلمات أولاً!';
+        return;
+      }
+
+      // Calculate actual count precisely from plainText
+      const sample = countSamples[currentCountIndex];
+      const actualCount = sample.plainText.trim().split(/\s+/).filter(Boolean).length;
 
       if (userVal === actualCount) {
         feedback.className = "text-xs font-black text-emerald-600";
@@ -747,12 +1184,19 @@
         }
       } else if (Math.abs(userVal - actualCount) <= 3) {
         feedback.className = "text-xs font-black text-amber-600";
-        feedback.textContent = `قريب جداً! العدد الفعلي هو ${actualCount} وأنت كتبت ${userVal}. تركيز ممتاز!`;
+        feedback.textContent = `قريب جداً! العدد الفعلي هو ${actualCount} كلمة وأنت كتبت ${userVal}. تركيز ممتاز!`;
       } else {
         feedback.className = "text-xs font-black text-rose-600";
-        feedback.textContent = `العدد الفعلي هو ${actualCount} كلمة. أعد المحاولة بعينيك فقط!`;
+        feedback.textContent = `العدد الفعلي هو ${actualCount} كلمة وأنت كتبت ${userVal}. خذ نفساً عميقاً وأعد المحاولة بعينيك فقط!`;
       }
     }
+
+    // Initialize samples on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderWordSentence();
+      renderLetterSentence();
+      renderCountSample();
+    });
 
     // 3. Relaxation Breathing Timer (4 Inhale - 2 Hold - 8 Exhale) for 5 Minutes
     let relaxTimer = null;
